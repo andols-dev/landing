@@ -21,10 +21,15 @@ header {
 /* FEATURES AND INFO */
 .features__box--heading {
   color: tomato;
-  margin-bottom: 1rem
+  margin-bottom: 1rem;
 }
 
-.info, .features {    
+.features__box--heading {
+  margin-bottom: 2rem;
+}
+
+.info,
+.features {
   margin-bottom: 2rem;
   padding: 2rem 0;
 }
@@ -35,15 +40,18 @@ header {
 
 .info__box--subheading,
 .info__box--header,
-.discount__info, .hero, .features {
+.discount__info,
+.hero,
+.features {
   font-family: "Open Sans", sans-serif;
 }
-.info__box--subheading, .hero, .hero__box--text {
+.info__box--subheading,
+.hero,
+.hero__box--text {
   font-size: 1rem;
   line-height: 140%;
 }
 /* HERO */
-
 .hero {
   display: flex;
   flex-direction: column;
@@ -61,7 +69,6 @@ header {
 .hero__box--heading {
   margin-bottom: 1rem;
 }
-
 
 /* DISCOUNT INFO*/
 .discount__info {
@@ -98,24 +105,28 @@ header {
   text-align: center;
 }
 
-
-
 /* INFORMATION BOX*/
+.info__box--header {
+  display: block;
+  margin-top: 1rem;
+  padding: 0.5rem;
+}
 .info__box,
 .features__box {
   display: flex;
   flex-direction: column;
 }
-.info__box img,.hero__box img {
+.info__box img,
+.hero__box img {
   width: 100%;
   height: auto;
   padding: 1px;
 }
 
-.info__box, .hero {
+.info__box,
+.hero {
   margin: 1rem;
 }
-
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 768px) {
@@ -136,30 +147,26 @@ header {
   .features {
     flex-direction: row;
   }
-  .info  {
+  .info {
     margin-top: 7rem;
-}
+  }
 
-.hero {
-  margin-top: 6rem;
-}
+  .hero {
+    margin-top: 6rem;
+  }
 
   .info__box,
   .features__box {
     flex: 1;
   }
-  .info__box--header {
-    display: block;
-    margin-top: 1rem;
-    padding: 0.5rem;
-  }
+
   .hero {
     flex-direction: row;
   }
   .info {
     padding: 4rem 0;
   }
-  .features__box > i  {
+  .features__box > i {
     font-size: 6rem;
     color: tomato;
   }
@@ -168,14 +175,14 @@ header {
     margin-top: 4rem;
   }
   .features__box--heading {
-    
     margin-bottom: 2rem;
   }
   .features__box--copy {
-    margin-top: 2rem
+    margin-top: 2rem;
   }
 
-  .hero__box, .discount__info {
+  .hero__box,
+  .discount__info {
     margin-bottom: 0;
   }
 }
